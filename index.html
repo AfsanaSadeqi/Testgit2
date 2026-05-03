@@ -1,19 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afsan Sadegi — Web Designer</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<div class="card">
-    <img src="https://via.placeholder.com/150" alt="Profile">
-    <h2>Afsana sadeqi</h2>
-    <p>Frontend Developer</p>
-    <button>Follow</button>
-</div>
+  <!--NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#hero">
+        <span class="brand-dot"></span>Afsan<span class="brand-accent">.</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link nav-cta" href="#contact">Let's Talk</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- HERO  -->
+  <section id="hero">
+    <!-- Animated background shapes -->
+    <div class="hero-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="row align-items-center min-vh-100 py-5">
+
+        <!-- LEFT: Text -->
+        <div class="col-lg-7 hero-text-col">
+          <div class="hero-tag reveal-up">Available for work ✦</div>
+          <h1 class="hero-name reveal-up delay-1">
+            Afsan<br />
+            <em>Sadeqi</em>
+          </h1>
+          <div class="hero-title-row reveal-up delay-2">
+            <span class="hero-title-badge">Web Designer</span>
+            <span class="divider-dot">·</span>
+            <span class="hero-title-badge">UI Designer</span>
+          </div>
+          <p class="af-hero-text reveal-up delay-3">
+         I create simple and modern websites that<br class="d-none d-md-block" />
+             are easy to use and visually clean.
+          </p>
+          <div class="hero-buttons reveal-up delay-4">
+            <a href="#projects" class="btn btn-primary-custom">
+              View Projects <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline-custom">
+              Contact Me
+            </a>
+          </div>
+
+          <!-- Social icons -->
+          <div class="hero-socials reveal-up delay-5">
+            <a href="#" class="social-link" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+            <a href="#" class="social-link" aria-label="Behance"><i class="bi bi-behance"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- RIGHT: Visual element -->
+        <div class="col-lg-5 hero-visual-col d-none d-lg-flex reveal-right">
+          <div class="hero-card-stack">
+            <div class="hcard hcard-back">
+              <span>UI / UX</span>
+            </div>
+            <div class="hcard hcard-mid">
+              <span>Figma</span>
+            </div>
+            <div class="hcard hcard-front">
+              <div class="hcard-avatar">
+                <i class="bi bi-person-fill"></i>
+              </div>
+              <div class="hcard-info">
+                <strong>Afsan Sadegi</strong>
+                <small>Web Designer · UI Designer</small>
+              </div>
+              <div class="hcard-badge">✦ Open to work</div>
+            </div>
+          </div>
+
+          <!-- Floating pills -->
+          <div class="float-pill pill-1">Figma <i class="bi bi-stars"></i></div>
+          <div class="float-pill pill-2">Bootstrap 5</div>
+          <div class="float-pill pill-3">React <i class="bi bi-lightning-fill"></i></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT-->
+  <section id="about" class="section-about">
+    <div class="container">
+
+<!-- <div class="section-header text-center">
+
+  <div class="section-label">About Me</div>
+
+  <h2 class="section-title">
+    Crafting digital <br />
+    <em>experiences</em> that matter
+  </h2>
+
+</div> -->
+
+
+
+      <div class="row align-items-center g-5">
+
+        <!-- Image -->
+        <div class="col-lg-5 reveal-left">
+          <div class="about-img-wrap">
+            <div class="about-img-bg"></div>
+            <div class="about-img-frame">
+              <img src="images/afsan.jpg" alt="Afsan Sadeqi" class="about-img" />
+            </div>
+            <div class="about-img-badge">
+              <span class="badge-num">3+</span>
+              <span class="badge-label">Years<br/>Experience</span>
+            </div>
+            <div class="about-img-badge2">
+              <i class="bi bi-palette2"></i>
+              <span>50+ Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="col-lg-7 reveal-right">
+           <div class="section-label">About Me</div> 
+           <h2 class="section-title">
+            Crafting digital<br /><em>experiences</em> that matter
+          </h2> 
+          <p class="about-desc">
+              Hi! I'm Afsan Sadeqi, a web designer who enjoys creating simple, clean, and user-friendly websites. I focus on making designs that not only look good, but also feel easy and natural to use.
+             </p>
+
+                    <p class="about-desc">
+                   I work with tools like HTML, CSS, Bootstrap, and Figma to turn ideas into real websites. I’m always learning new things and trying to improve my design and coding skills every day.
+                       </p>
+
+          <div class="about-stats row g-3 mt-2">
+            <div class="col-4">
+              <div class="stat-card">
+                <span class="stat-num">50+</span>
+                <span class="stat-label">Projects Done</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card">
+                <span class="stat-num">30+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="stat-card">
+                <span class="stat-num">3+</span>
+                <span class="stat-label">Years Exp.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary-custom mt-4">
+            Work With Me <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section-skills">
+    <div class="container">
+      <div class="section-header text-center reveal-up">
+        <div class="section-label">What I Know</div>
+        <h2 class="section-title">Skills &amp; <em>Expertise</em></h2>
+        <p class="section-sub">These are the tools and skills I use to design and build websites.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center mt-2">
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-1">
+          <div class="af-skill">
+            <div class="skill-icon"style="--c:#6366F1">
+              <i class="bi bi-filetype-html"></i>
+            </div>
+            <h5>HTML5</h5>
+            <p>Semantic, accessible, standards-first markup.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-2">
+          <div class="af-skill">
+            <div class="skill-icon" style="--c:#F472B6">
+              <i class="bi bi-filetype-css"></i>
+            </div>
+            <h5>CSS3</h5>
+            <p>Animations, grids, flexbox, and custom properties.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-3">
+          <div class="af-skill">
+            <div class="skill-icon" style="--c:#FBBF24">
+              <i class="bi bi-filetype-js"></i>
+            </div>
+            <h5>JavaScript</h5>
+            <p>Interactive UIs, DOM manipulation, and ES6+.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-4">
+          <div class="af-skill">
+            <div class="skill-icon" style="--c:#6366F1">
+              <i class="bi bi-bootstrap"></i>
+            </div>
+            <h5>Bootstrap</h5>
+            <p>Responsive layouts built fast and clean.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-1">
+          <div class="af-skill">
+            <div class="skill-icon" style="--c:#F472B6">
+              <i class="bi bi-brush"></i>
+            </div>
+            <h5>UI Design</h5>
+            <p>Visual hierarchy, components, and design systems.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-2">
+          <div class="af-skill">
+            <div class="skill-icon" style="--c:#FBBF24">
+              <i class="bi bi-people"></i>
+            </div>
+            <h5>UX Design</h5>
+            <p>User flows, wireframes, research, and testing.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-3">
+          <div class="af-skill">
+            <div class="skill-icon" style="--c:#6366F1">
+              <i class="bi bi-vector-pen"></i>
+            </div>
+            <h5>Figma</h5>
+            <p>Prototypes, auto-layout, and design handoff.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="96"></div></div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 reveal-up delay-4">
+          <div class="af-skill">
+            <div class="skill-icon" style="--c:#F472B6">
+              <i class="bi bi-phone"></i>
+            </div>
+            <h5>Responsive</h5>
+            <p>Mobile-first design for every screen size.</p>
+            <div class="skill-bar"><div class="skill-fill" data-width="94"></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section-projects">
+    <div class="container">
+      <div class="section-header text-center reveal-up">
+        <div class="section-label">My Work</div>
+        <h2 class="section-title">My Selected <em>Projects</em></h2>
+        <p class="section-sub">Here are some of my recent works.</p>
+      </div>
+
+      <div class="row g-4 mt-2 projects-grid">
+
+        <!-- Project 1 — large -->
+        <div class="col-lg-8 reveal-up delay-1">
+          <div class="af-project project-card-large">
+            <div class="project-video-wrap">
+              <video autoplay muted loop playsinline>
+                <source src="videos/project1.mp4" type="video/mp4" />
+              </video>
+              <div class="project-overlay">
+                <a  href="mailto:afsan.sadeqi@gmail.com"  class="project-link-btn"><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">UI Design</span>
+                <span class="ptag">Figma</span>
+              </div>
+              
+                 <h4>Personal E-commerce Design</h4>
+                   <p>This project was created as a practice to design a simple and user-friendly online shop layout.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 — small -->
+        <div class="col-lg-4 reveal-up delay-2">
+          <div class="af-project h-100">
+            <div class="project-video-wrap">
+              <video autoplay muted loop playsinline>
+                <source src="videos/project2.mp4" type="video/mp4" />
+                     </video>
+
+              <div class="project-overlay">
+                <a href="mailto:afsan.sadeqi@gmail.com" class="project-link-btn"><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">Web Design</span>
+              </div>
+              
+                     <h4>Admin Dashboard UI</h4>
+                    <p>I build simple websites that are easy to use</p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 — small -->
+        <div class="col-lg-4 reveal-up delay-1">
+          <div class="af-project h-100">
+            <div class="project-video-wrap">
+              <video autoplay muted loop playsinline>
+                <source src="videos/project3.mp4" type="video/mp4" />
+              </video>
+              <div class="project-overlay">
+                <a href="mailto:afsan.sadeqi@gmail.com" class="project-link-btn"><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">UX</span>
+                <span class="ptag">Branding</span>
+              </div>
+              <h4>Mobile App UI</h4>
+                <p>A simple mobile app interface designed with soft colors and user-friendly navigation.</p>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 — large -->
+        <div class="col-lg-8 reveal-up delay-2">
+          <div class="af-project project-card-large">
+            <div class="project-video-wrap">
+              <video autoplay muted loop playsinline>
+                <source src="videos/project4.mp4" type="video/mp4" />
+              </video>
+              <div class="project-overlay">
+                <a href="mailto:afsan.sadeqi@gmail.com"  class="project-link-btn"><i class="bi bi-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span class="ptag">HTML/CSS</span>
+                <span class="ptag">Bootstrap</span>
+              </div>
+              <h4>Business Website Design</h4>
+<p>A responsive website layout designed for a small business with clear sections and modern styling.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT-->
+   
+  <section id="contact" class="section-contact">
+    <div class="container">
+
+      <div class="row g-5 align-items-start">
+
+        <!-- Left: Info -->
+        <div class="col-lg-5 reveal-left">
+          <div class="section-label">Say Hello</div>
+          <h2 class="section-title">Let's create<br /><em>something great</em></h2>
+          <p class="contact-intro">
+            If you have a project or idea, feel free to contact me anytime.
+              </p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-envelope-heart-fill"></i></div>
+              <div>
+                <span class="ci-label">Email</span>
+                <span class="ci-val">Afsan.sadeqi@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <span class="ci-label">Location</span>
+                <span class="ci-val">Herat, Afghanistan· Remote friendly</span>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ci-icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <span class="ci-label">Response time</span>
+                <span class="ci-val">Usually within a day</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials mt-4">
+            <a href="mailto:afsan.sadeqi@gmail.com" class="social-link"><i class="bi bi-dribbble"></i></a>
+            <a href="mailto:afsan.sadeqi@gmail.com" class="social-link"><i class="bi bi-behance"></i></a>
+            <a href="mailto:afsan.sadeqi@gmail.com" class="social-link"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:afsan.sadeqi@gmail.com" class="social-link"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="col-lg-7 reveal-right">
+          <div class="contact-form-card">
+            <div class="form-row-group row g-3">
+
+              <div class="col-md-6">
+                <div class="form-field">
+                  <i class="bi bi-person field-icon"></i>
+                 <input type="text" placeholder="Your Name" class="form-control contact-input">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-field">
+                  <i class="bi bi-envelope field-icon"></i>
+                 <input type="email" class="form-control contact-input">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-field">
+                  <i class="bi bi-tag field-icon"></i>
+                  <textarea class="form-control contact-input"></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-field form-field-select">
+                  <i class="bi bi-briefcase field-icon"></i>
+                  <select class="form-control form-select-custom">
+                    <option value="" disabled selected>Project Type</option>
+                    <option>Web Design</option>
+                    <option>UI / UX Design</option>
+                    <option>Figma Prototype</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-field form-field-textarea">
+                  <i class="bi bi-chat-dots field-icon"></i>
+                  <textarea class="form-control" rows="5" placeholder="Tell me about your project..."></textarea>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-primary-custom w-100 btn-submit" id="submitBtn">
+                  <span class="btn-label">Send Message</span>
+                  <i class="bi bi-send-fill ms-2"></i>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="form-success" id="formSuccess">
+              <i class="bi bi-check-circle-fill"></i>
+              <p>Your message has been sent! I'll get back to you soon. ✨</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">Afsan<span>.</span></div>
+        <p class="footer-copy">© 2025 Afsan Sadeqi · Designed with care &amp; creativity.</p>
+        <div class="footer-socials">
+          <a href="mailto:afsan.sadeqi@gmail.com" aria-label="Dribbble"><i class="bi bi-dribbble"></i></a>
+          <a  href="mailto:afsan.sadeqi@gmail.com"  aria-label="Behance"><i class="bi bi-behance"></i></a>
+          <a  href="mailto:afsan.sadeqi@gmail.com"    aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
